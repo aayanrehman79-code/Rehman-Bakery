@@ -371,9 +371,10 @@ a:hover {
 
 .favourite-card img {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
     border-radius: 12px;
+    display: block;
 }
 
 .favourite-card h3 {
