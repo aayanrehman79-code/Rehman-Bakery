@@ -1,0 +1,476 @@
+body {
+    background-color: #fff8ef;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    color: #35251d;
+}
+
+h1 {
+    color: #8b4513;
+    text-align: center;
+}
+
+h2 {
+    color: #8b4513;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    color: #8b4513;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c47b36;
+    text-decoration: underline;
+}
+/* Individual recipe cards */
+
+.recipe-card {
+    background-color: #ffffff;
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Recipe headings */
+
+.recipe-card h2 {
+    color: #8b4513;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Recipe paragraphs */
+
+.recipe-card p {
+    text-align: left;
+    line-height: 1.7;
+}
+
+/* Ingredient lists */
+
+.recipe-card ul {
+    text-align: left;
+    line-height: 1.9;
+    padding-left: 25px;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 550px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Mobile Navigation Menu */
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .navbar {
+        margin: -20px -20px 30px -20px;
+        padding: 18px 20px;
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+        color: #fff8ef;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 15px;
+    }
+
+    .menu-toggle:checked + .menu-button + .nav-links {
+        display: flex;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 12px 0;
+    }
+}
+
+/* About Us Page */
+
+.about-header {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #f3e5d5;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+.about-header h1 {
+    font-size: 36px;
+}
+
+.about-header p {
+    font-size: 18px;
+}
+
+.about-section {
+    background-color: #ffffff;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h2 {
+    text-align: left;
+}
+
+.about-section p {
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* Contact Us Page */
+
+.contact-header {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #f3e5d5;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+.contact-header h1 {
+    font-size: 36px;
+}
+
+.contact-header p {
+    font-size: 18px;
+}
+
+.contact-section {
+    background-color: #ffffff;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-section h2 {
+    text-align: left;
+}
+
+.contact-section p {
+    text-align: left;
+    line-height: 1.8;
+}
+
+.contact-section ul {
+    text-align: left;
+    line-height: 2;
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.enquiry-form label {
+    font-weight: bold;
+    color: #5c3525;
+    margin-top: 10px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    padding: 13px;
+    border: 1px solid #d8c6b8;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.enquiry-form textarea {
+    resize: vertical;
+}
+
+.enquiry-form button {
+    background-color: #5c3525;
+    color: #fff8ef;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.enquiry-form button:hover {
+    background-color: #8b4513;
+}
+
+/* Homepage Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #f3e5d5;
+    padding: 55px;
+    border-radius: 18px;
+    margin: 30px auto;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-subtitle {
+    color: #8b4513;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    color: #5c3525;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.hero-description {
+    color: #5c3525;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #5c3525;
+    color: #fff8ef;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: #8b4513;
+    color: #fff8ef;
+    text-decoration: none;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Mobile Hero Layout */
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        height: 260px;
+    }
+}
+
+/* Customer Favourites Section */
+
+.favourites-section {
+    padding: 45px 15px;
+    margin: 30px auto;
+}
+
+.favourites-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.favourites-heading p:first-child {
+    color: #8b4513;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.favourites-heading h2 {
+    font-size: 32px;
+    color: #5c3525;
+}
+
+.favourites-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.favourite-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.favourite-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.favourite-card h3 {
+    color: #8b4513;
+    font-size: 23px;
+}
+
+.favourite-card p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.favourite-button {
+    display: inline-block;
+    background-color: #5c3525;
+    color: #fff8ef;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.favourite-button:hover {
+    background-color: #8b4513;
+    color: #fff8ef;
+    text-decoration: none;
+}
+
+/* Website Footer */
+
+.site-footer {
+    background-color: #5c3525;
+    color: #fff8ef;
+    padding: 45px 35px 15px;
+    margin: 50px -40px -40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.site-footer h2,
+.site-footer h3 {
+    color: #e6b77a;
+}
+
+.site-footer p {
+    text-align: left;
+    line-height: 1.7;
+}
+
+.footer-links a,
+.footer-contact a {
+    display: block;
+    color: #fff8ef;
+    text-decoration: none;
+    margin: 12px 0;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #e6b77a;
+}
+
+.footer-bottom {
+    border-top: 1px solid #8b6856;
+    margin-top: 35px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Mobile Footer */
+
+@media (max-width: 700px) {
+    .site-footer {
+        margin: 40px -20px -20px;
+        padding: 35px 20px 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
