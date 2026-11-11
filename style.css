@@ -321,7 +321,9 @@ a:hover {
         padding: 25px;
         gap: 20px;
     }
-
+    body {
+        padding: 15px;
+    }
     .hero-content h1 {
         font-size: 32px;
     }
