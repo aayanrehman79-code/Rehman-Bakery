@@ -53,7 +53,7 @@ a:hover {
 /* Recipe paragraphs */
 
 .recipe-card p {
-    text-align: left;
+    text-align: list styled position;
     line-height: 1.7;
 }
 
