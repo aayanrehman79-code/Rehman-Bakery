@@ -331,7 +331,7 @@ a:hover {
     .hero-image img {
     width: 100%;
     max-width: 420px;
-    height: 320px !important;
+    height: 280px !important;
     object-fit: cover;
 }
 
