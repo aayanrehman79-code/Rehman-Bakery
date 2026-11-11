@@ -66,9 +66,9 @@ a:hover {
 }
 
 .recipe-image {
-    width: 50%;
+    width: 65%;
     max-width: 350px;
-    height: 150px;
+    height: 175px;
     object-fit: cover;
     border-radius: 12px;
     display: block;
