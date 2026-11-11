@@ -246,7 +246,7 @@ a:hover {
 
 .hero {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     gap: 40px;
     background-color: #f3e5d5;
@@ -315,24 +315,27 @@ a:hover {
 
 /* Mobile Hero Layout */
 
-@media (max-width: 700px) {}
+@media (max-width: 700px) {
     .hero {
         flex-direction: column;
         padding: 25px;
         gap: 20px;
     }
+
     body {
         padding: 15px;
     }
+
     .hero-content h1 {
         font-size: 32px;
     }
 
     .hero-image img {
-    width: 100%;
-    max-width: 560px;
-    height: 320px !important;
-    object-fit: cover;
+        width: 100%;
+        max-width: 460px;
+        height: 320px !important;
+        object-fit: cover;
+    }
 }
 
 /* Customer Favourites Section */
@@ -489,6 +492,6 @@ a:hover {
 @media (max-width: 700px) {}
     .hero-image img {
         width: 100%;
-        max-width: 380px;
+        max-width: 460px;
         height: 220px;
     }
