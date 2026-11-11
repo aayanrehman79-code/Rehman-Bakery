@@ -315,7 +315,7 @@ a:hover {
 
 /* Mobile Hero Layout */
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {}
     .hero {
         flex-direction: column;
         padding: 25px;
@@ -329,8 +329,10 @@ a:hover {
     }
 
     .hero-image img {
-        height: 220px;
-    }
+    width: 100%;
+    max-width: 420px;
+    height: 320px !important;
+    object-fit: cover;
 }
 
 /* Customer Favourites Section */
@@ -484,10 +486,9 @@ a:hover {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {}
     .hero-image img {
         width: 100%;
         max-width: 380px;
         height: 220px;
     }
-}
